@@ -1,0 +1,3 @@
+[submodule "libraries/mustache.php"]
+	path = libraries/mustache.php
+	url = git://github.com/bobthecow/mustache.php.git
