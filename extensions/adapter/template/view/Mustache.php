@@ -11,7 +11,7 @@ class Mustache extends \lithium\template\view\adapter\File {
 		$this->_context = $options['context'] + $this->_context;
 		$this->_data = (array) $data + $this->_vars;
 		$renderer = new Renderer();
-		return $renderer->render(file_get_contents($template), $this->_data);
+		return $renderer->render(file_get_contents($template), $this->_context + $this->_data);
 	}
 
 	/**
